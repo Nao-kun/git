@@ -17,4 +17,9 @@ public class Oiseau extends Animal {
         this.vol = vol;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", vol=" + vol;
+    }
+
 }
