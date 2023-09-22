@@ -2,17 +2,12 @@ public class Animal {
     private String nom;
     private int age;
 
+    public Animal() {
+    }
+
     public Animal(String nom, int age) {
         this.nom = nom;
         this.age = age;
-    }
-
-    public void manger() {
-        System.out.println("L'animal mange de la nourriture.");
-    }
-
-    public void seDéplacer() {
-        System.out.println("L'animal se déplace.");
     }
 
     public String getNom() {
@@ -35,4 +30,5 @@ public class Animal {
     public String toString() {
         return "nom=" + nom + ", age=" + age;
     }
+
 }
