@@ -1,25 +1,25 @@
 public class Oiseau extends Animal {
-    private String typePlumage;
+    private boolean vol;
 
-    public Oiseau(String nom, int age, String typePlumage) {
+    public Oiseau() {
+    }
+
+    public Oiseau(String nom, int age, boolean vol) {
         super(nom, age);
-        this.typePlumage = typePlumage;
+        this.vol = vol;
     }
 
-    public void voler() {
-        System.out.println("L'oiseau vole dans le ciel.");
+    public boolean isVol() {
+        return vol;
     }
 
-    public String getTypePlumage() {
-        return typePlumage;
-    }
-
-    public void setTypePlumage(String typePlumage) {
-        this.typePlumage = typePlumage;
+    public void setVol(boolean vol) {
+        this.vol = vol;
     }
 
     @Override
     public String toString() {
-        return super.toString() + ", typePlumage=" + typePlumage;
+        return super.toString() + ", vol=" + vol;
     }
+
 }
